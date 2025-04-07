@@ -8,13 +8,13 @@ import { SCRAPE_INTERVAL_MS } from './config.js';
         console.log('🔐 Logging into X...');
         await initX();
 
-        // setInterval(async () => {
-        setTimeout(async () => {
+        setInterval(async () => {
+        // setTimeout(async () => {
             try {
                 const price = await fetchBTCPrice();
                 if (!price) throw new Error('BTC price not found');
 
-                const text = `🟢 BTC/USD: ${price}\n#Bitcoin #BTC #Crypto`;
+                const text = `BTC/USD: ${price}\n#Bitcoin #BTC`;
                 console.log(`📤 Posting: ${text}`);
                 await postTweet(text);
             } catch (err) {

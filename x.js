@@ -2,6 +2,7 @@ import { XBot, XBOTConstants } from "xBot-js";
 import { X_USERNAME, X_PASSWORD, X_EMAIL } from './config.js';
 import path from "path";
 import readline from "readline";
+import { exitApp } from "./util.js";
 
 // Create an interface for reading user input
 const rl = readline.createInterface({
@@ -63,13 +64,7 @@ export async function initX() {
 }
 
 export async function postTweet(text) {
-    // TODO: voy por aquí.
-    // hay que revisitar los selectors
-    const tweetResult = await xBot.tweet(X_USERNAME, text);
+    const tweetResult = await xBot.tweet(text);
 }
 
-function exitApp(message) {
-    console.log(message);
-    process.exit(-1);
-}
 

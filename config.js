@@ -7,6 +7,6 @@ dotenv.config();
 export const X_USERNAME = process.env.X_USERNAME
 export const X_PASSWORD = process.env.X_PASSWORD
 export const X_EMAIL = process.env.X_EMAIL
-export const SCRAPE_INTERVAL_MS = 10 * 1000 // 1 minute
+export const SCRAPE_INTERVAL_MS = 300 * 1000 // 5 minutes
 export const PRICE_SELECTOR = process.env.PRICE_SELECTOR
 
