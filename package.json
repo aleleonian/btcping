@@ -1,0 +1,25 @@
+{
+  "name": "btcping",
+  "version": "1.0.0",
+  "description": "BTC X bot",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aleleonian/btcping.git"
+  },
+  "author": "Alejandro Leonian",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/aleleonian/btcping/issues"
+  },
+  "homepage": "https://github.com/aleleonian/btcping#readme",
+  "dependencies": {
+    "dotenv": "^16.4.7",
+    "puppeteer": "^24.6.0",
+    "xbot-js": "^1.1.9"
+  }
+}
