@@ -5,8 +5,8 @@ import readline from "readline";
 
 // Create an interface for reading user input
 const rl = readline.createInterface({
-  input: process.stdin,
-  output: process.stdout,
+    input: process.stdin,
+    output: process.stdout,
 });
 
 let browser, page;
@@ -63,7 +63,9 @@ export async function initX() {
 }
 
 export async function postTweet(text) {
-    await xBot.tweet(text);
+    // TODO: voy por aquí.
+    // hay que revisitar los selectors
+    const tweetResult = await xBot.tweet(X_USERNAME, text);
 }
 
 function exitApp(message) {

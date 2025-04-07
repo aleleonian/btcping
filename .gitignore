@@ -136,3 +136,4 @@ dist
 .pnp.*
 
 chrome_data/
+.vscode/
